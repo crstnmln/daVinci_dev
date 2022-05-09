@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+@import url("../css/fonts.css");
+/* @import url('../css/reseter.css');
+ */
+
+/*  CSS HEX 
+#08D9D6 teal
+#252A34 negro
+#FF2E63 rojo
+#EAEAEA gris
+ */
+
+* {
+  font-family: Roboto-Regular;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  color: #2f3841;
+}
+html {
+  scroll-behavior: smooth;
+}
+@media screen and (min-width: 845px) {
+  body {
+    width: 75%;
+    margin: auto;
+  }
+}
+/* HEADER */
+
+@media screen and (min-width: 769px) {
+  .headerContainer .headerIcon {
+    display: none;
+  }
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 40px;
+    align-items: center;
+    align-content: center;
+    background-color: #35858B;
+    border-radius: 0px 0px 15px 15px;
+  }
+  .headerLogo a {
+    display: flex;
+    align-content: center;
+  }
+  .headerLogo img {
+    border-radius: 5px;
+  }
+  .headerContainer {
+    display: flex;
+    background-color: #35858B;
+  }
+  .headerMenu ul {
+    background-color: #35858B;
+  }
+  .headerMenu ul li {
+    font-size: 1rem;
+    display: inline-block;
+    margin: auto 5px;
+  }
+  .headerMenu a,
+  .mainHeaderButton a {
+    text-decoration: none;
+    color: #eaeaea;
+    background-color: #2f3841;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  .headerMenu a:hover,
+  .mainHeaderButton a:hover {
+    color: #2f3841;
+    background-color: #eaeaea;
+  }
+}
+@media screen and (max-width: 768px) {
+  .headerMenu {
+    display: none;
+  }
+
+  .headerIcon {
+    width: 50px;
+    height: 50px;
+  }
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 40px;
+    align-items: center;
+    align-content: center;
+    background-color: #35858B;
+    border-radius: 0px 0px 15px 15px;
+  }
+  .headerLogo a {
+    display: flex;
+    align-content: center;
+  }
+  .headerLogo img {
+    border-radius: 5px;
+  }
+  .headerContainer:hover .headerMenu {
+    display: flex;
+    position: absolute;
+    background: rgba(0, 0, 0, 0);
+  }
+  /* .headerContainer:hover{
+    display: flex;
+    align-content: center;
+    align-items: center;
+} */
+  .headerMenu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    right: 42px;
+    background: rgba(0, 0, 0, 0);
+  }
+  .headerMenu ul li {
+    margin: 7px 0px;
+  }
+  .headerMenu a,
+  .mainHeaderButton a,
+  .servicesPublic p > a,
+  .servicesMobile p > a {
+    text-decoration: none;
+    color: #eaeaea;
+    background-color: #2f3841;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  .headerMenu a:hover,
+  .mainHeaderButton a:hover,
+  .servicesPublic p > a:hover,
+  .servicesMobile p > a:hover {
+    color: #2f3841;
+    background-color: #eaeaea;
+  }
+}
+.mainHeader {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 30px;
+}
+.mainText {
+  font-size: 1.2em;
+  display: block;
+  width: 70%;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+.boxButton {
+  text-decoration: none;
+  color: #eaeaea;
+  background-color: #2f3841;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 1em;
+}
+.boxButton:hover {
+  color: #2f3841;
+  background-color: #eaeaea;
+}
+.box {
+  display: flex;
+  margin: 20px 10%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+}
+.containerMap {
+  width: 75%;
+}
+/* FOOTER */
+
+.footer {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #4FBDBA;
+  border-radius: 15px 15px 0px 0px;
+  text-decoration: none;
+}
+.contactUs {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+.infoWap,
+.infoMail,
+.infoMaps {
+  padding: 5px;
+  font-size: 1.2rem;
+  display: flex;
+  /* align-items: center;
+    align-content: center; */
+}
+.infoWap a,
+.infoMail a,
+.infoMaps a {
+  color: #2f3841;
+  display: inline-block;
+}
+.infoWap p,
+.infoMail p,
+.infoMaps p {
+  display: inline-block;
+  margin: auto 15px;
+  /* align-items: center;
+    align-content: center; */
+}
+.copyright {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 10px auto;
+}

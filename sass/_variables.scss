@@ -1,0 +1,25 @@
+/* vars */
+
+/* $gray: #EAEAEA;
+$black: #252A34;
+$transparent: rgba(0, 0, 0, 0); */
+
+$colors: (
+  _gray: #eaeaea,
+  _black: #2f3841,
+  _transparent: rgba(0, 0, 0, 0),
+  _purple: #35858B,
+  
+  _purple_light2: #4FBDBA,
+
+
+);
+
+@mixin btn_style {
+  text-decoration: none;
+  color: map-get($colors, _gray);
+  background-color: map-get($colors, _black);
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 1rem;
+}

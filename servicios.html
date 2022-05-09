@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios - Miscelanea DaVinci</title>
+    <link rel="shortcut icon" href="assets/Logo.png" type="image/x-icon">
+    <meta name="description" content="Microempresa dedicada a la oferta de servicios miscelaneos y ofimáticos." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/servicios.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="headerLogo">
+            <a href="./index.html">
+                <img src="./assets/main_logo.png" alt="Logo de empresa" width="100" height="50" />
+                <!-- ../src/logo-fav.png -->
+            </a>
+        </div>
+        <div class="headerContainer">
+            <img src="./assets/icons8-menú-400.png" alt="Menú desplegable" class="headerIcon" />
+            <nav class="headerMenu">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="./ubicacion.html">Ubicación</a></li>
+                    <li><a href="./contacto.html">Contáctenos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section id="mainTxt">
+            <h2 class="mainHeader">¡Pague sus servicios y facturas sin salir de casa!</h2>
+        </section>
+        <section>
+            <div class="box">
+                <div class="boxItem">
+                    <h2 class="boxItemHeader animate__bounceIn">¡Atención!</h2>
+                    <p class="boxItemTxt">Por favor lea atentamente qué facturas podrá pagar con nosotros antes de
+                        realizar cualquier transacción.</p>
+                    <ul class="boxItemList">
+                        <li>Claro Móvil</li>
+                        <li>Claro Hogar</li>
+                        <li>Movistar</li>
+                        <li>Cualquier servicio publico</li>
+                        <li>Netflix, Amazon, HBO, Crunchyroll</li>
+                    </ul>
+                </div>
+                <div class="boxItemImg">
+                    <img class="rotate-in-2-fwd-cw" src="./assets/servicios_publicos_animado.jpg" alt="Aviso importante" width="300" height="200"/>
+                </div>
+            </div>
+            <p class="notice">Para el pago de sus facturas peuede realizar la transferencia vía Nequi, Daviplata al
+                número 3134915891 o por Transacción bancaria Scotiabank - 012348783936.</p>
+            <p class="notice">Una vez realizado el pago, envíe un mensaje vía Whatsapp al número <a
+                    href="https://api.whatsapp.com/send?phone=573134915891">3134915891</a> con la siguiente información:
+            </p>
+            <div class="personal">
+                <h3>Datos personales</h3>
+                <ul>
+                    <li>Nombre y apellido</li>
+                    <li>Servicio a pagar</li>
+                    <li>Número de referencia de factura o recibo</li>
+                    <li>Valor a pagar</li>
+                </ul>
+            </div>
+
+            <h3 class="transHeader">Datos de transaccion</h3>
+            <div class="transactionBox">
+                <div class="transactionBoxNe">
+                    <h4>Nequi</h4>
+                    <ul>
+                        <li>Número de celular</li>
+                        <li>Número de referencia de transacción</li>
+                    </ul>
+                </div>
+                <div class="transactionBoxDav">
+                    <h4>Daviplata</h4>
+                    <ul>
+                        <li>Número de celular</li>
+                        <li>Número de referencia de transacción</li>
+                    </ul>
+                </div>
+                <div class="transactionBoxBnk">
+                    <h4>Transferencia bancaria</h4>
+                    <ul>
+                        <li>Número de referencia de la transacción</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="notice">Una vez enviada la información y el pago haya sido realizado recibirás un mensaje de
+                vuelta con la confirmación del pago y el comprobante de pago del mismo.</p>
+        </section>
+
+        <section>
+            <div class="box">
+                <div class="boxItem">
+                    <h3 class="boxItemHeader animate__bounceIn">Recargas a celular</h3>
+                    <p class="boxItemTxt">Por favor lea atentamente qué tipo de paquetes de voz o datos tenemos
+                        disponibles antes de realizar cualquier transacción.</p>
+                    <p class="boxItemTxt">
+                        <label for="paquetes_recargas">Paquetes disponibles:</label>
+                        <select class="boxItemTxt" name="paquetes_recargas" id="paquetes_recargas" size="1">
+                            <option value="1">Datos 500MB 7 días - 5 mil</option>
+                            <option value="2">Datos 1GB, Minutos ilimitados - 12 mil</option>
+                            <option value="3">Datos 5GB, Minutos ilimitados, Whatsapp no consume datos - 25 mil</option>
+                            <option value="4">Datos 10GB, Minutos ilimitados, Redes sociales no consumen datos - 40 mil
+                            </option>
+                        </select>
+                    </p>
+                </div>
+            </div>
+
+            <p class="notice">Para realizar recargas o compra de paquetes de datos, envíe un mensaje vía Whatsapp al
+                número <a href="https://api.whatsapp.com/send?phone=573134915891">3134915891</a> con la siguiente
+                información:</p>
+            <div class="personal">
+                <h3>Datos para la recarga</h3>
+                <ul>
+                    <li>Nombre y apellido</li>
+                    <li>nombre del plan o paquete</li>
+                    <li>Número de celular a recargar</li>
+                    <li>Valor a pagar (en caso de ser recarga)</li>
+                </ul>
+            </div>
+            <h3 class="transHeader">Datos de transaccion</h3>
+            <div class="transactionBox">
+                <div class="transactionBoxNe">
+                    <h4>Nequi</h4>
+                    <ul>
+                        <li>Número de celular</li>
+                        <li>Número de referencia de transacción</li>
+                    </ul>
+                </div>
+                <div class="transactionBoxDav">
+                    <h4>Daviplata</h4>
+                    <ul>
+                        <li>Número de celular</li>
+                        <li>Número de referencia de transacción</li>
+                    </ul>
+                </div>
+                <div class="transactionBoxBnk">
+                    <h4>Transferencia bancaria</h4>
+                    <ul>
+                        <li>Número de referencia de la transacción</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="notice">Una vez enviada la información y el pago haya sido realizado recibirás un mensaje de
+                vuelta con la confirmación del pago y el comprobante de pago del mismo.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="contactUs">Contáctenos</p>
+        <div class="infoWap">
+            <img src="./assets/icons8-whatsapp-16.png" alt="Numero Whatsapp" />
+            <!-- crear enlace para whatssapp -->
+            <p><a href="https://api.whatsapp.com/send?phone=573134915891">3134915891</a></p>
+        </div>
+        <div class="infoMail">
+            <img src="./assets/icons8-nuevo-post-16.png" alt="correo electrónico" />
+            <!-- crear enlace para whatssapp -->
+            <p><a href="mailto:miscelaneadavinci@gmail.com">miscelaneadavinci@gmail.com</a></p>
+        </div>
+        <div class="infoMaps">
+            <img src="./assets/icons8-geo-cerca-16.png" alt="Ubicación en Google Maps" />
+            <!-- crear enlace para whatssapp -->
+            <p><a href="https://goo.gl/maps/JCEYBdGXyTM1y4jC6">Av. kra 86 # 74 - 53</a></p>
+        </div>
+        <p class="copyright">© Cristian Molina 2022</p>
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.409774238507!2d-74.10662668527307!3d4.698655642983695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b48ecee87ff%3A0x256030cb2ff0f799!2sAk.%2086%20%2374-53%2C%20Bogot%C3%A1!5e0!3m2!1sen!2sco!4v1636661926029!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+    </footer>
+</body>
+
+</html>
+
+<!-- <a href="https://google.com" class="button">Go to Google</a
+<a href="https://www.facebook.com/">
+        <input type="button" value="click here">
+    </a>
+-->
+<!-- a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+} -->
