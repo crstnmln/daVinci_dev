@@ -10,6 +10,16 @@
         <link rel="stylesheet" href="./css/productos.css" />
     </head>
     <body>
+        <template>
+            <section class="boxItem">
+                <img src="${product.source}" alt="${product.alt}" width="150" height="auto" />
+                <h3>${product.name}</h3>
+                <p>${product.description}</p>
+                <p>$ ${product.price}</p>
+                <input type="button" value="Comprar">
+                <input type="button" value="Agregar al carrito">
+            </section>
+        </template>
         <header class="header">
             <div class="headerLogo">
                 <a href="./index.html">
@@ -37,66 +47,10 @@
                 principal.
             </p>
             <section class="box" id="box">
-                <!-- <section class="boxItem">
-                    <img src="./assets/cuaderno_20k.jpeg" alt="Cuaderno argollado" width="150" height="auto" />
-                    <h3>Cuaderno Argollado</h3>
-                    <p>Cuaderno cuadriculado 100 hojas</p>
-                    <p>$ 20.000</p>
-                </section>
-                <section class="boxItem">
-                    <img src="./assets/cuaderno_21k.jpeg" alt="Cuaderno argollado 2" width="150" height="auto" />
-                    <h3>Cuaderno Argollado</h3>
-                    <p>Cuaderno cuadriculado 100 hojas</p>
-                    <p>$ 21.000</p>
-                </section>
-                <section class="boxItem">
-                    <img src="./assets/cuaderno_22k.jpeg" alt="Cuaderno argollado 3" width="150" height="auto" />
-                    <h3>Cuaderno Argollado</h3>
-                    <p>Cuaderno cuadriculado 100 hojas</p>
-                    <p>$ 23.000</p>
-                </section>
-                <section class="boxItem">
-                    <img src="./assets/cuaderno_24k.jpeg" alt="Cuaderno argollado 4" width="150" height="auto" />
-                    <h3>Cuaderno Argollado</h3>
-                    <p>Cuaderno cuadriculado 100 hojas</p>
-                    <p>$ 24.000</p>
-                </section>
-                <section class="boxItem">
-                    <img src="./assets/cuaderno_norma_5k.jpg" alt="Cuaderno cosido" width="150" height="auto" />
-                    <h3>Cuaderno Cosido</h3>
-                    <p>Cuaderno cuadriculado 50 hojas</p>
-                    <p>$ 5.000</p>
-                </section>
-                <section class="boxItem">
-                    <img src="./assets/lapiz_1k.jpeg" alt="Lápiz unidad" width="150" height="auto" />
-                    <h3>Lápiz</h3>
-                    <p>Lápiz Faber Castell "B"</p>
-                    <p>$ 1.000</p>
-                </section>
-                <section class="boxItem">
-                    <img src="./assets/sharpie_30k.jpeg" alt="Marcadores Sharpie" width="150" height="auto" />
-                    <h3>Marcadores Sharpie</h3>
-                    <p>Set de 8 marcadores doble punta</p>
-                    <p>$ 30.000</p>
-                </section>
-                <section class="boxItem">
-                    <img src="./assets/borrador_500.jpeg" alt="Borrador unidad" width="150" height="auto" />
-                    <h3>Borrador Pelikan</h3>
-                    <p>Borrador Pelikan de nata</p>
-                    <p>$ 500</p>
-                </section>
-                <section class="boxItem">
-                    <img src="./assets/esfero_1k.png" alt="Esfero" width="150" height="auto" />
-                    <h3>Esferos Bic</h3>
-                    <p>Esfero Bic (Negro, Azul o Rojo)</p>
-                    <p>$ 1.000</p>
-                </section>
-                <section class="boxItem">
-                    <img src="./assets/Resma_11k.jpeg" alt="Resma de papel" width="150" height="auto" />
-                    <h3>Resma de papel</h3>
-                    <p>Resma de papel Reprograf color blanco</p>
-                    <p>$ 11.000</p>
-                </section> -->
+
+            </section>
+            <section class="box" id="boxPurchase">
+
             </section>
             <p class="notice">
                 Recuerde que puede hacer el pago por adelantado de los productos que requiera de la lista mostrada anteriormente, una vez realizada la transferencia, envíe un mensaje vía Whatsapp al número
