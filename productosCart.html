@@ -10,16 +10,7 @@
         <link rel="stylesheet" href="./css/productos.css" />
     </head>
     <body>
-        <template>
-            <section class="boxItem">
-                <img src="${product.source}" alt="${product.alt}" width="150" height="auto" />
-                <h3>${product.name}</h3>
-                <p>${product.description}</p>
-                <p>$ ${product.price}</p>
-                <input type="button" value="Comprar">
-                <input type="button" value="Agregar al carrito">
-            </section>
-        </template>
+        
         <header class="header">
             <div class="headerLogo">
                 <a href="./index.html">
@@ -46,17 +37,10 @@
                 Los productos mostrados a continuación podrán ser pagados por adelantado vía Nequi, Daviplata al número 3134915891 o por Transacción bancaria (Scotiabank - 012348783936) para que pueda recoger los productos en nuestra sede
                 principal.
             </p>
-            <section class="box" id="box">
+            <section class="box" id="boxCart">
 
             </section>
-            <section class="box" id="boxPurchase">
-
-            </section>
-            <div>
-                <p>
-                    <input type="button" value="Mirar Carrito" id = "redirectButton">
-                </p>
-            </div>
+            
             <p class="notice">
                 Recuerde que puede hacer el pago por adelantado de los productos que requiera de la lista mostrada anteriormente, una vez realizada la transferencia, envíe un mensaje vía Whatsapp al número
                 <a href="https://api.whatsapp.com/send?phone=573134915891">3134915891</a> con la siguiente información:
@@ -113,23 +97,10 @@
                 <p><a href="https://goo.gl/maps/JCEYBdGXyTM1y4jC6">Av. kra 86 # 74 - 53</a></p>
             </div>
             <p class="copyright">© Cristian Molina 2022</p>
-            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.409774238507!2d-74.10662668527307!3d4.698655642983695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b48ecee87ff%3A0x256030cb2ff0f799!2sAk.%2086%20%2374-53%2C%20Bogot%C3%A1!5e0!3m2!1sen!2sco!4v1636661926029!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
-        </footer>
+            
         <script src="./js/index.js"></script>
-        
+       
     </body>
 </html>
 
-<!-- <a href="https://google.com" class="button">Go to Google</a
-<a href="https://www.facebook.com/">
-        <input type="button" value="click here">
-    </a>
--->
-<!-- a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
 
-    text-decoration: none;
-    color: initial;
-} -->
