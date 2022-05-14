@@ -166,6 +166,8 @@ inventory.forEach((product) => {
 });
 
 
+// a partir de aqui tengo un error 
+
 redirectButton.addEventListener("click", () => {
 
     window.location.href = "./productosCart.html";
@@ -175,6 +177,7 @@ redirectButton.addEventListener("click", () => {
     if (updatedCart) {
         console.log("entro en true");
         updatedCart.forEach((product) => {
+            //en consola recibo un error que boxCart es null 
           boxCart.innerHTML += `
             <section class = "boxItem" >
             <img src="${product.source}" alt="${product.alt}" width="150" height="auto" />
