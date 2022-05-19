@@ -1,7 +1,7 @@
 "use strict";
 
 
-class Products {
+class Product {
     constructor(id, source, alt, name, description, price) {
         this.id = id;
         this.source = source;
@@ -12,7 +12,7 @@ class Products {
     }
 }
 
-const argollado = new Products(
+const argollado = new Product(
     1,
     "./assets/cuaderno_20k.jpeg",
     "Cuaderno argollado",
@@ -20,7 +20,7 @@ const argollado = new Products(
     "Cuaderno cuadriculado 100 hojas",
     20000
 );
-const argollado2 = new Products(
+const argollado2 = new Product(
     2,
     "./assets/cuaderno_21k.jpeg",
     "Cuaderno argollado 2",
@@ -28,7 +28,7 @@ const argollado2 = new Products(
     "Cuaderno cuadriculado 100 hojas",
     21000
 );
-const argollado3 = new Products(
+const argollado3 = new Product(
     3,
     "./assets/cuaderno_22k.jpeg",
     "Cuaderno argollado 3",
@@ -36,7 +36,7 @@ const argollado3 = new Products(
     "Cuaderno cuadriculado 100 hojas",
     23000
 );
-const argollado4 = new Products(
+const argollado4 = new Product(
     4,
     "./assets/cuaderno_24k.jpeg",
     "Cuaderno argollado 4",
@@ -44,7 +44,7 @@ const argollado4 = new Products(
     "Cuaderno cuadriculado 100 hojas",
     24000
 );
-const cosido = new Products(
+const cosido = new Product(
     5,
     "./assets/cuaderno_norma_5k.jpg",
     "Cuaderno cosido",
@@ -52,7 +52,7 @@ const cosido = new Products(
     "Cuaderno cuadriculado 50 hojas",
     5000
 );
-const lapiz = new Products(
+const lapiz = new Product(
     6,
     "./assets/lapiz_1k.jpeg",
     "Lápiz unidad",
@@ -60,7 +60,7 @@ const lapiz = new Products(
     'Lápiz Faber Castell "B"',
     1000
 );
-const marcadores = new Products(
+const marcadores = new Product(
     7,
     "./assets/sharpie_30k.jpeg",
     "Marcadores Sharpie",
@@ -68,7 +68,7 @@ const marcadores = new Products(
     "Set de 8 marcadores doble punta",
     30000
 );
-const borrador = new Products(
+const borrador = new Product(
     8,
     "./assets/borrador_500.jpeg",
     "Borrador unidad",
@@ -76,7 +76,7 @@ const borrador = new Products(
     "Borrador de nata - Pelikan",
     500
 );
-const esfero = new Products(
+const esfero = new Product(
     9,
     "./assets/esfero_1k.png",
     "Esfero",
@@ -84,7 +84,7 @@ const esfero = new Products(
     "Esfero Bic (Negro, Azul o Rojo)",
     1000
 );
-const resmaPapel = new Products(
+const resmaPapel = new Product(
     10,
     "./assets/Resma_11k.jpeg",
     "Resma de papel",
@@ -113,3 +113,49 @@ let boxCart = document.getElementById("boxCart");
 let mainCart = [];
 let updatedCart;
 
+/*
+ejecucion para boton compra
+
+inventory.forEach(({ id, source, alt, name, price }) => {
+    purchaseButton = document.getElementById(`buy${id}`);
+    purchaseButton.addEventListener("click", (event) => {
+        console.log(event.target.id);
+        boxPurchase.innerHTML = `
+    <section class = "boxItem" id = "product${id}">
+        <p>GRACIAS POR SU COMPRA</p>
+        <img src="${source}" alt="${alt}" width="150" height="auto" />
+        <h3>Has adquirido un ${name}</h3>
+        <p>$ ${price}</p>
+    </section>`;
+    });
+}); */
+
+
+/* inventory.forEach((product) => {
+    cartButton = document.getElementById(`addCart${product.id}`);
+    cartButton.addEventListener("click", (event) => {
+        // porque siempre cartButton.id me muestra addCart10 y porque no puedo hacer `addCart${product.id}` === cartButton.id
+       
+   
+        let inCart = mainCart.some((product) => {
+            return `addCart${product.id}` === event.target.id;
+        });
+        if (inCart) {
+            mainCart.some((product) => {
+            console.log("already in cart, quantity updated");
+            console.log(product.quantity);
+            product.quantity++;
+            console.log(product.quantity);
+            localStorage.setItem("cartOnBrowser", JSON.stringify(mainCart));
+        });
+        } else {
+            product.quantity = 1;
+            mainCart.push(product);
+            localStorage.setItem("cartOnBrowser", JSON.stringify(mainCart));
+            console.log("added to cart");
+        }
+    
+});
+
+});
+ */

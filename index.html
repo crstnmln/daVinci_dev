@@ -1,132 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Miscelanea DaVinci</title>
-        <link rel="shortcut icon" href="assets/Logo.png" type="image/x-icon">
-        <meta name="description" content="Microempresa dedicada a la oferta de servicios miscelaneos y ofimáticos." />
-        <meta name="keywords" content="MISCELANEA, PAPELERIA, FOTOCOPIAS, SITP, RECARGAS">
-        <link rel="stylesheet" href="./css/style.css" />
-    </head>
-    <body>
-        <header class="header">
-            <div class="headerLogo">
-                <a href="./index.html">
-                    <img src="./assets/main_logo.png" alt="Logo de empresa" width="100" height="50" />
-                    <!-- ../src/logo-fav.png -->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miscelanea DaVinci</title>
+    <link rel="shortcut icon" href="assets/Logo.png" type="image/x-icon">
+    <meta name="description" content="Microempresa dedicada a la oferta de servicios miscelaneos y ofimáticos." />
+    <meta name="keywords" content="MISCELANEA, PAPELERIA, FOTOCOPIAS, SITP, RECARGAS">
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="headerLogo">
+            <a href="./index.html">
+                <img src="./assets/main_logo.png" alt="Logo de empresa" width="100" height="50" />
+                <!-- ../src/logo-fav.png -->
+            </a>
+        </div>
+        <div class="headerContainer">
+            <img src="./assets/icons8-menú-400.png" alt="Menú desplegable" class="headerIcon" />
+            <nav class="headerMenu">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a id="redirectButton" href="./productos.html">Productos</a></li>
+                    <li><a href="./productosCart.html">Carrito</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="./ubicacion.html">Ubicación</a></li>
+                    <li><a href="./contacto.html">Contáctenos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="mainHeader">
+            <h1 class="mainHeaderTittle">Miscelánea DaVinci</h1>
+            <p class="mainHeaderText">Soluciones ofimáticas y misceláneas al alcance de su mano</p>
+            <div class="mainHeaderButton">
+                <a href="./servicios.html" class="mainHeaderBtn">Servicios</a>
+            </div>
+            <div class="mainHeaderImage">
+                <a href="./servicios.html" class="mainHeaderLink">
+                    <img class="mainHeaderImg slit-in-vertical" src="assets/miscelanea_banner.jpg" alt="logo-grande"
+                        width="500" height="auto" />
                 </a>
             </div>
-            <div class="headerContainer">
-                <img src="./assets/icons8-menú-400.png" alt="Menú desplegable" class="headerIcon" />
-                <nav class="headerMenu">
-                    <ul>
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="./productos.html">Productos</a></li>
-                        <li><a href="./servicios.html">Servicios</a></li>
-                        <li><a href="./ubicacion.html">Ubicación</a></li>
-                        <li><a href="./contacto.html">Contáctenos</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main class="main">
-            <section class="mainHeader">
-                <h1 class="mainHeaderTittle">Miscelánea DaVinci</h1>
-                <p class="mainHeaderText">Soluciones ofimáticas y misceláneas al alcance de su mano</p>
-                <div class="mainHeaderButton">
-                    <a href="./servicios.html" class="mainHeaderBtn">Servicios</a>
-                </div>
-                <div class="mainHeaderImage">
-                    <a href="./servicios.html" class="mainHeaderLink">
-                        <img class="mainHeaderImg slit-in-vertical" src="assets/miscelanea_banner.jpg" alt="logo-grande" width="500" height="auto" />
-                    </a>
-                </div>
-                <!-- esto es un boton, consultar si se puede con button or input -->
-            </section>
-            <section class="services">
-                <!-- section with articles -->
-                <article class="servicesPublic">
-                    <a class="servicesPublicLink" href="./servicios.html">
-                        <img class="servicesPublicImg" src="./assets/servicios_publicos_1.jpg" alt="pago servicios públicos" />
-                    </a>
-                    <p><a href="./servicios.html">Pago de servicios públicos.</a></p>
+            <!-- esto es un boton, consultar si se puede con button or input -->
+        </section>
+        <section class="services">
+            <!-- section with articles -->
+            <article class="servicesPublic">
+                <a class="servicesPublicLink" href="./servicios.html">
+                    <img class="servicesPublicImg" src="./assets/servicios_publicos_1.jpg"
+                        alt="pago servicios públicos" />
+                </a>
+                <p><a href="./servicios.html">Pago de servicios públicos.</a></p>
 
-                    <!-- call to action button -->
-                </article>
-                <article class="servicesMobile">
-                    <a class="servicesMobileLink" href="./servicios.html">
-                        <img class="servicesMobileImg" src="./assets/mobile_isp.png" alt="pago recargas, planes y paquetes" />
-                    </a>
-                    <p><a href="./servicios.html">Recargas, paquetes y planes.</a></p>
-                    <!-- call to action button -->
-                </article>
-            </section>
-            <section class="banner">
-                <!-- section with no articles -->
-                <div class="bannerImg">
-                    <img src="./assets/servicios_publicos_2.jpg" alt="banner pagos y recargas" />
-                </div>
-                <div class="bannerBox">
-                    <h2 class="bannerTittle">Pague sus servicios ó recargue su celular con un paquete de minutos ó datos desde casa.</h2>
-                    <p class="bannerText">Sólo es necesario realizar la transferencia por Nequi o Daviplata y el numero de referencia o celular y listo!</p>
-                    <a href="./servicios.html">Servicios</a>
-                </div>
                 <!-- call to action button -->
-            </section>
-            <p class="adsMainTittle">Otros productos de nuestra miscelánea</p>
-            <section class="ads">
-                <aside class="adsTullave">
-                    <img src="./assets/tu-llave.jpg" alt="recargas Tu-Llave" width="200" height="200"/>
-                    <p>Recargas de tarjeta Tu-Llave</p>
-                    <a href="./servicios.html">
-                        <img src="./assets/icons8-flecha-ampliar-16.png" alt="icono flecha" />
-                    </a>
-                    <!-- call to action button -->
-                </aside>
-                <aside class="adsPrints">
-                    <img src="./assets/impresiones-fotocopias1.jpg" alt="Impresiones y papelería" width="200" height="200"/>
-                    <p>Impresiones y papelería</p>
-                    <a href="./servicios.html">
-                        <img src="./assets/icons8-flecha-ampliar-16.png" alt="icono flecha" />
-                    </a>
-                    <!-- call to action button -->
-                </aside>
-                <aside class="adsHomeworks">
-                    <img src="./assets/trabajos1.jpg" alt="trabajos, cartas y otros" width="200" height="200"/>
-                    <p>Trabajos, cartas y otros</p>
-                    <a href="./servicios.html">
-                        <img src="./assets/icons8-flecha-ampliar-16.png" alt="icono flecha" />
-                    </a>
-                    <!-- call to action button -->
-                </aside>
-            </section>
-        </main>
-        <footer class="footer">
-            <p class="contactUs">Contáctenos</p>
-            <div class="infoWap">
-                <img src="./assets/icons8-whatsapp-16.png" alt="Numero Whatsapp" />
-                <!-- crear enlace para whatssapp -->
-                <p><a href="https://api.whatsapp.com/send?phone=573134915891">3134915891</a></p>
+            </article>
+            <article class="servicesMobile">
+                <a class="servicesMobileLink" href="./servicios.html">
+                    <img class="servicesMobileImg" src="./assets/mobile_isp.png"
+                        alt="pago recargas, planes y paquetes" />
+                </a>
+                <p><a href="./servicios.html">Recargas, paquetes y planes.</a></p>
+                <!-- call to action button -->
+            </article>
+        </section>
+        <section class="banner">
+            <!-- section with no articles -->
+            <div class="bannerImg">
+                <img src="./assets/servicios_publicos_2.jpg" alt="banner pagos y recargas" />
             </div>
-            <div class="infoMail">
-                <img src="./assets/icons8-nuevo-post-16.png" alt="correo electrónico" />
-                <!-- crear enlace para whatssapp -->
-                <p><a href="mailto:miscelaneadavinci@gmail.com">miscelaneadavinci@gmail.com</a></p>
+            <div class="bannerBox">
+                <h2 class="bannerTittle">Pague sus servicios ó recargue su celular con un paquete de minutos ó datos
+                    desde casa.</h2>
+                <p class="bannerText">Sólo es necesario realizar la transferencia por Nequi o Daviplata y el numero de
+                    referencia o celular y listo!</p>
+                <a href="./servicios.html">Servicios</a>
             </div>
-            <div class="infoMaps">
-                <img src="./assets/icons8-geo-cerca-16.png" alt="Ubicación en Google Maps" />
-                <!-- crear enlace para whatssapp -->
-                <p><a href="https://goo.gl/maps/JCEYBdGXyTM1y4jC6">Av. kra 86 # 74 - 53</a></p>
-            </div>
-            <p class="copyright">© Cristian Molina 2022</p>
-            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.409774238507!2d-74.10662668527307!3d4.698655642983695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b48ecee87ff%3A0x256030cb2ff0f799!2sAk.%2086%20%2374-53%2C%20Bogot%C3%A1!5e0!3m2!1sen!2sco!4v1636661926029!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
-        </footer>
-        <script src="./js/variables.js"></script>
-        <script src="./js/products.js"></script>
-        <script src="./js/cart.js"></script>
-    </body>
+            <!-- call to action button -->
+        </section>
+        <p class="adsMainTittle">Otros productos de nuestra miscelánea</p>
+        <section class="ads">
+            <aside class="adsTullave">
+                <img src="./assets/tu-llave.jpg" alt="recargas Tu-Llave" width="200" height="200" />
+                <p>Recargas de tarjeta Tu-Llave</p>
+                <a href="./servicios.html">
+                    <img src="./assets/icons8-flecha-ampliar-16.png" alt="icono flecha" />
+                </a>
+                <!-- call to action button -->
+            </aside>
+            <aside class="adsPrints">
+                <img src="./assets/impresiones-fotocopias1.jpg" alt="Impresiones y papelería" width="200"
+                    height="200" />
+                <p>Impresiones y papelería</p>
+                <a href="./servicios.html">
+                    <img src="./assets/icons8-flecha-ampliar-16.png" alt="icono flecha" />
+                </a>
+                <!-- call to action button -->
+            </aside>
+            <aside class="adsHomeworks">
+                <img src="./assets/trabajos1.jpg" alt="trabajos, cartas y otros" width="200" height="200" />
+                <p>Trabajos, cartas y otros</p>
+                <a href="./servicios.html">
+                    <img src="./assets/icons8-flecha-ampliar-16.png" alt="icono flecha" />
+                </a>
+                <!-- call to action button -->
+            </aside>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="contactUs">Contáctenos</p>
+        <div class="infoWap">
+            <img src="./assets/icons8-whatsapp-16.png" alt="Numero Whatsapp" />
+            <!-- crear enlace para whatssapp -->
+            <p><a href="https://api.whatsapp.com/send?phone=573134915891">3134915891</a></p>
+        </div>
+        <div class="infoMail">
+            <img src="./assets/icons8-nuevo-post-16.png" alt="correo electrónico" />
+            <!-- crear enlace para whatssapp -->
+            <p><a href="mailto:miscelaneadavinci@gmail.com">miscelaneadavinci@gmail.com</a></p>
+        </div>
+        <div class="infoMaps">
+            <img src="./assets/icons8-geo-cerca-16.png" alt="Ubicación en Google Maps" />
+            <!-- crear enlace para whatssapp -->
+            <p><a href="https://goo.gl/maps/JCEYBdGXyTM1y4jC6">Av. kra 86 # 74 - 53</a></p>
+        </div>
+        <p class="copyright">© Cristian Molina 2022</p>
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.409774238507!2d-74.10662668527307!3d4.698655642983695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b48ecee87ff%3A0x256030cb2ff0f799!2sAk.%2086%20%2374-53%2C%20Bogot%C3%A1!5e0!3m2!1sen!2sco!4v1636661926029!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+    </footer>
+    <script src="./js/variables.js"></script>
+    <!-- <script src="./js/products.js"></script>
+        <script src="./js/cart.js"></script> -->
+</body>
+
 </html>
 
 <!-- <a href="https://google.com" class="button">Go to Google</a
