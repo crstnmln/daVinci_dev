@@ -24,13 +24,11 @@ inventory.forEach((product) => {
 inventory.forEach((product) => {
     cartButton = document.getElementById(`addCart${product.id}`);
     cartButton.addEventListener("click", (event) => {
-        // porque siempre cartButton.id me muestra addCart10 y porque no puedo hacer `addCart${product.id}` === cartButton.id
-
+      
         let inCart = mainCart.some((product) => {
             return `addCart${product.id}` === event.target.id;
         });
         if (inCart) {
-            
             console.log("already in cart, quantity updated");
             mainCart.forEach((item) => {
                if (product.id === item.id){
@@ -38,7 +36,6 @@ inventory.forEach((product) => {
                 console.log(item.quantity);
                }
             })
-        
             localStorage.setItem("cartOnBrowser", JSON.stringify(mainCart));
         } else {
             product.quantity = 1;
