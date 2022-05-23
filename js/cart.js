@@ -40,7 +40,7 @@ if (updatedCart.length > 0) {
  updatedCart.forEach((product) => {
 
 
-        total +=  (product.price*product.quantity);
+        //total +=  (product.price*product.quantity);
     
     
     let delButton = document.getElementById(`delCart${product.id}`);
@@ -58,14 +58,8 @@ if (updatedCart.length > 0) {
                 return `delCart${product.id}` === event.target.id
             });
             updatedCart.splice(itemIndex, 1);
-            updatedCart.forEach((product) => {
-                total=0;
-                total +=  (product.price*product.quantity);
             
-            })
             // localStorage.setItem("cartOnBrowser", JSON.stringify(mainCart));
-
-            // y aqui deberia eliminarlo del array updatedCart, pero la posicion del index del array es diferente a cualquier valor que tengo en el producto (como por ejemplo el id). entonces no se que podria utilizar en este caso
         }
 
         if (updatedCart.length === 0 || !updatedCart || updatedCart == null) {
@@ -102,6 +96,12 @@ if (updatedCart.length > 0) {
 
 let pay = document.getElementById(`payButton`);
 pay.addEventListener("click", () => {
+    updatedCart.forEach((product) => {
+        
+        total +=  (product.price*product.quantity);
+    
+    })
+
         swal({
             title: "Gracias por tu compra!",
             text: `el valor total apagar eso ${total}!`,
