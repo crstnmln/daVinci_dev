@@ -24,7 +24,7 @@ if (updatedCart.length > 0) {
             <p>${description}</p>
             <p>$ ${price}</p>
             <p>Cantidad de articulos: ${quantity}</p>
-            <input type="button" value="eliminar uno" id = "delCart${id}">
+            <input type="button" value="Eliminar del carrito" id = "delCart${id}">
         </section>`;
     });
 } else if (updatedCart.length === 0 || !updatedCart || updatedCart == null) {
@@ -35,12 +35,26 @@ if (updatedCart.length > 0) {
         </section>`;
 }
 
-/* updatedCart.forEach((product) => {
+ updatedCart.forEach((product) => {
     let delButton = document.getElementById(`delCart${product.id}`);
+    let delproduct = document.getElementById(`boxItem${product.id}`);
     delButton.addEventListener("click", (event) => {
         // porque siempre cartButton.id me muestra addCart10 y porque no puedo hacer `addCart${product.id}` === cartButton.id
 
-        let inCart = mainCart.some((product) => {
+
+        if(`delCart${product.id}` === event.target.id){
+            console.log(`el id del boton: delCart${product.id}`);
+            boxCart.removeChild(delproduct);
+        }
+
+        if (updatedCart.length === 0 || !updatedCart || updatedCart == null) {
+            console.log("entro en false - el carrito esta vacio");
+            boxCart.innerHTML += `
+                <section class = "boxItem" >
+                    <h3>Carrito Vacio</h3>
+                </section>`;
+        }
+      /*  let inCart = mainCart.some((product) => {
             return `delCart${product.id}` === event.target.id;
         });
         if (inCart) {   
@@ -57,10 +71,10 @@ if (updatedCart.length > 0) {
             mainCart.push(product);
             localStorage.setItem("cartOnBrowser", JSON.stringify(mainCart));
             console.log("added to cart");
-        } 
+        } */
     });
 });
- */
+ 
 
 /* updatedCart.forEach((product) => {
     let del = document.getElementById(`del${product.id}`);

@@ -12,7 +12,7 @@ class Product {
     }
 }
 
-const argollado = new Product(
+const spiralNb = new Product(
     1,
     "./assets/cuaderno_20k.jpeg",
     "Cuaderno argollado",
@@ -20,7 +20,7 @@ const argollado = new Product(
     "Cuaderno cuadriculado 100 hojas",
     20000
 );
-const argollado2 = new Product(
+const spiralNb2 = new Product(
     2,
     "./assets/cuaderno_21k.jpeg",
     "Cuaderno argollado 2",
@@ -28,7 +28,7 @@ const argollado2 = new Product(
     "Cuaderno cuadriculado 100 hojas",
     21000
 );
-const argollado3 = new Product(
+const spiralNb3 = new Product(
     3,
     "./assets/cuaderno_22k.jpeg",
     "Cuaderno argollado 3",
@@ -36,7 +36,7 @@ const argollado3 = new Product(
     "Cuaderno cuadriculado 100 hojas",
     23000
 );
-const argollado4 = new Product(
+const spiralNb4 = new Product(
     4,
     "./assets/cuaderno_24k.jpeg",
     "Cuaderno argollado 4",
@@ -44,7 +44,7 @@ const argollado4 = new Product(
     "Cuaderno cuadriculado 100 hojas",
     24000
 );
-const cosido = new Product(
+const stiched = new Product(
     5,
     "./assets/cuaderno_norma_5k.jpg",
     "Cuaderno cosido",
@@ -52,7 +52,7 @@ const cosido = new Product(
     "Cuaderno cuadriculado 50 hojas",
     5000
 );
-const lapiz = new Product(
+const pencil = new Product(
     6,
     "./assets/lapiz_1k.jpeg",
     "Lápiz unidad",
@@ -60,7 +60,7 @@ const lapiz = new Product(
     'Lápiz Faber Castell "B"',
     1000
 );
-const marcadores = new Product(
+const markers = new Product(
     7,
     "./assets/sharpie_30k.jpeg",
     "Marcadores Sharpie",
@@ -68,7 +68,7 @@ const marcadores = new Product(
     "Set de 8 marcadores doble punta",
     30000
 );
-const borrador = new Product(
+const rubber = new Product(
     8,
     "./assets/borrador_500.jpeg",
     "Borrador unidad",
@@ -76,7 +76,7 @@ const borrador = new Product(
     "Borrador de nata - Pelikan",
     500
 );
-const esfero = new Product(
+const pen = new Product(
     9,
     "./assets/esfero_1k.png",
     "Esfero",
@@ -84,7 +84,7 @@ const esfero = new Product(
     "Esfero Bic (Negro, Azul o Rojo)",
     1000
 );
-const resmaPapel = new Product(
+const paperReam = new Product(
     10,
     "./assets/Resma_11k.jpeg",
     "Resma de papel",
@@ -94,16 +94,16 @@ const resmaPapel = new Product(
 );
 
 let inventory = [
-    argollado,
-    argollado2,
-    argollado3,
-    argollado4,
-    cosido,
-    lapiz,
-    marcadores,
-    borrador,
-    esfero,
-    resmaPapel,
+    spiralNb,
+    spiralNb2,
+    spiralNb3,
+    spiralNb4,
+    stiched,
+    pencil,
+    markers,
+    rubber,
+    pen,
+    paperReam
 ];
 let box = document.getElementById("box");
 let boxPurchase = document.getElementById("boxPurchase");
