@@ -44,7 +44,9 @@ if (updatedCart.length > 0) {
 
         if(`delCart${product.id}` === event.target.id){
             console.log(`el id del boton: delCart${product.id}`);
+            //aqui hago la eliminacion del elemento <section> en el HTML
             boxCart.removeChild(delproduct);
+            // y aqui deberia eliminarlo del array updatedCart, pero la posicion del index del array es diferente a cualquier valor que tengo en el producto (como por ejemplo el id). entonces no se que podria utilizar en este caso
         }
 
         if (updatedCart.length === 0 || !updatedCart || updatedCart == null) {
