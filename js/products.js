@@ -39,7 +39,7 @@ inventory.forEach((product) => {
                         duration: 3500,
                         className: 'infoToast',
                         destination: './productosCart.html',
-                        gravity: "top", // `top` or `bottom`
+                        gravity: "bottom", // `top` or `bottom`
                         position: "left"
                     }).showToast();
                 }
