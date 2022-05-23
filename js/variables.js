@@ -112,6 +112,8 @@ let purchaseButton, cartButton;
 let boxCart = document.getElementById("boxCart");
 let mainCart = [];
 let updatedCart;
+let payBtn = document.getElementById(`divBtn`);
+let total = 0;
 
 /*
 ejecucion para boton compra

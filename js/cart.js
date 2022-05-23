@@ -12,6 +12,7 @@
 console.log(updatedCart.length);
 
 if (updatedCart.length > 0) {
+    payBtn.style.display = 'flex';
     console.log("entro en true");
     updatedCart.forEach((product) => {
 
@@ -28,14 +29,20 @@ if (updatedCart.length > 0) {
         </section>`;
     });
 } else if (updatedCart.length === 0 || !updatedCart || updatedCart == null) {
+    payBtn.style.display = 'none';
     console.log("entro en false - el carrito esta vacio");
     boxCart.innerHTML += `
         <section class = "boxItem" >
             <h3>Carrito Vacio</h3>
         </section>`;
-}
+};
 
  updatedCart.forEach((product) => {
+
+
+        total +=  (product.price*product.quantity);
+    
+    
     let delButton = document.getElementById(`delCart${product.id}`);
     let delproduct = document.getElementById(`boxItem${product.id}`);
     delButton.addEventListener("click", (event) => {
@@ -46,6 +53,18 @@ if (updatedCart.length > 0) {
             console.log(`el id del boton: delCart${product.id}`);
             //aqui hago la eliminacion del elemento <section> en el HTML
             boxCart.removeChild(delproduct);
+            console.log(product);
+            let itemIndex = updatedCart.findIndex((product) => {
+                return `delCart${product.id}` === event.target.id
+            });
+            updatedCart.splice(itemIndex, 1);
+            updatedCart.forEach((product) => {
+                total=0;
+                total +=  (product.price*product.quantity);
+            
+            })
+            // localStorage.setItem("cartOnBrowser", JSON.stringify(mainCart));
+
             // y aqui deberia eliminarlo del array updatedCart, pero la posicion del index del array es diferente a cualquier valor que tengo en el producto (como por ejemplo el id). entonces no se que podria utilizar en este caso
         }
 
@@ -55,6 +74,7 @@ if (updatedCart.length > 0) {
                 <section class = "boxItem" >
                     <h3>Carrito Vacio</h3>
                 </section>`;
+            payBtn.style.display = 'none';
         }
       /*  let inCart = mainCart.some((product) => {
             return `delCart${product.id}` === event.target.id;
@@ -76,6 +96,28 @@ if (updatedCart.length > 0) {
         } */
     });
 });
+
+
+
+
+let pay = document.getElementById(`payButton`);
+pay.addEventListener("click", () => {
+        swal({
+            title: "Gracias por tu compra!",
+            text: `el valor total apagar eso ${total}!`,
+            icon: "success",
+            className: "green-bg"
+              
+          });
+          total=0;
+          mainCart = [];
+    });
+
+
+/* if (updatedCart.length > 0) {   
+    boxCart.innerHTML += `
+    <input type="button" class = "" id ="" value="Pagar">`
+} */
  
 
 /* updatedCart.forEach((product) => {

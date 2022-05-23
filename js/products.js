@@ -24,17 +24,25 @@ inventory.forEach((product) => {
 inventory.forEach((product) => {
     cartButton = document.getElementById(`addCart${product.id}`);
     cartButton.addEventListener("click", (event) => {
-      
+
         let inCart = mainCart.some((product) => {
             return `addCart${product.id}` === event.target.id;
         });
         if (inCart) {
             console.log("already in cart, quantity updated");
             mainCart.forEach((item) => {
-               if (product.id === item.id){
-                item.quantity++;
-                console.log(item.quantity);
-               }
+                if (product.id === item.id) {
+                    item.quantity++;
+                    console.log(item.quantity);
+                    Toastify({
+                        text: `${item.quantity} unidades de ${product.name} en el carrito`,
+                        duration: 3500,
+                        className: 'infoToast',
+                        destination: './productosCart.html',
+                        gravity: "top", // `top` or `bottom`
+                        position: "left"
+                    }).showToast();
+                }
             })
             localStorage.setItem("cartOnBrowser", JSON.stringify(mainCart));
         } else {
@@ -42,6 +50,15 @@ inventory.forEach((product) => {
             mainCart.push(product);
             localStorage.setItem("cartOnBrowser", JSON.stringify(mainCart));
             console.log("added to cart");
+            Toastify({
+                text: `${product.name} agregado al carrito`,
+                duration: 3500,
+                className: 'infoToast',
+                destination: './productosCart.html',
+                gravity: "bottom", // `top` or `bottom`
+                position: "left"
+            }).showToast();
+
         }
     });
 });
