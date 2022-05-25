@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "source": "./assets/cuaderno_20k.jpeg",
+        "alt": "Cuaderno argollado",
+        "name": "Cuaderno Argollado",
+        "description": "Cuaderno cuadriculado 100 hojas",
+        "price": 20000
+    },
+    {
+        "id": 2,
+        "source": "./assets/cuaderno_21k.jpeg",
+        "alt": "Cuaderno argollado 2",
+        "name": "Cuaderno Argollado",
+        "description": "Cuaderno cuadriculado 100 hojas",
+        "price": 21000
+    },
+    {
+        "id": 3,
+        "source": "./assets/cuaderno_22k.jpeg",
+        "alt": "Cuaderno argollado 3",
+        "name": "Cuaderno Argollado",
+        "description": "Cuaderno cuadriculado 100 hojas",
+        "price": 23000
+    },
+    {
+        "id": 4,
+        "source": "./assets/cuaderno_24k.jpeg",
+        "alt": "Cuaderno argollado 4",
+        "name": "Cuaderno Argollado",
+        "description": "Cuaderno cuadriculado 100 hojas",
+        "price": 24000
+    },
+    {
+        "id": 5,
+        "source": "./assets/cuaderno_norma_5k.jpg",
+        "alt": "Cuaderno cosido",
+        "name": "Cuaderno Cosido",
+        "description": "Cuaderno cuadriculado 50 hojas",
+        "price": 5000
+    },
+    {
+        "id": 6,
+        "source": "./assets/lapiz_1k.jpeg",
+        "alt": "Lápiz unidad",
+        "name": "Lápiz",
+        "description": "Lápiz Faber Castell 'B' ",
+        "price": 1000
+    },
+    {
+        "id": 7,
+        "source": "./assets/sharpie_30k.jpeg",
+        "alt": "Marcadores Sharpie",
+        "name": "Marcadores Sharpie",
+        "description": "Set de 8 marcadores doble punta",
+        "price": 30000
+    },
+    {
+        "id": 8,
+        "source": "./assets/borrador_500.jpeg",
+        "alt": "Borrador unidad",
+        "name": "Borrador Pelikan",
+        "description": "Borrador de nata - Pelikan",
+        "price": 500
+    },
+    {
+        "id": 9,
+        "source": "./assets/esfero_1k.png",
+        "alt": "Esfero",
+        "name": "Esferos Bic",
+        "description": "Esfero Bic (Negro, Azul o Rojo)",
+        "price": 1000
+    },
+    {
+        "id": 10,
+        "source": "./assets/Resma_11k.jpeg",
+        "alt": "Resma de papel",
+        "name": "Resma de papel",
+        "description": "Resma de papel Reprograf color blanco",
+        "price": 11000
+    }
+]

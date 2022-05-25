@@ -1,6 +1,5 @@
 "use strict";
 
-
 class Product {
     constructor(id, source, alt, name, description, price) {
         this.id = id;
@@ -93,7 +92,7 @@ const paperReam = new Product(
     11000
 );
 
-let inventory = [
+/* let inventory = [
     spiralNb,
     spiralNb2,
     spiralNb3,
@@ -104,7 +103,8 @@ let inventory = [
     rubber,
     pen,
     paperReam
-];
+]; */
+let inventory;
 let box = document.getElementById("box");
 let boxPurchase = document.getElementById("boxPurchase");
 let redirectButton = document.querySelector("#redirectButton");
