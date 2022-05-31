@@ -104,7 +104,16 @@ const paperReam = new Product(
     pen,
     paperReam
 ]; */
+
+
+
 let inventory;
+/* .catch(function(error) {
+console.log(error);
+}); */
+
+console.log(inventory);
+
 let box = document.getElementById("box");
 let boxPurchase = document.getElementById("boxPurchase");
 let redirectButton = document.querySelector("#redirectButton");
@@ -161,3 +170,6 @@ inventory.forEach(({ id, source, alt, name, price }) => {
 
 });
  */
+
+
+

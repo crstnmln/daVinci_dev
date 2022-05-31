@@ -58,6 +58,7 @@ if (updatedCart.length > 0) {
                 return `delCart${product.id}` === event.target.id
             });
             updatedCart.splice(itemIndex, 1);
+            localStorage.setItem("cartOnBrowser", JSON.stringify(updatedCart));
             
             // localStorage.setItem("cartOnBrowser", JSON.stringify(mainCart));
         }

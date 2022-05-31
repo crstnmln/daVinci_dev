@@ -6,11 +6,11 @@
     : localStorage.setItem("cartOnBrowser", JSON.stringify(mainCart));
 
 
-    fetch('./js/JSON/products.json')
+    setTimeout(() => {
+        fetch('./js/JSON/products.json')
     .then(response => response.json())
     .then(data => {
         inventory = data;
-        console.log(inventory);
 
        //code inserted here 
     
@@ -71,14 +71,13 @@
             });
         });
         
-    // ended here
+       
     
-    })
-    .catch(function(error) {
-        console.log(error);
-      });
+// ended here
 
-
+})
+    
+}, 10)
 
 
 /* redirectButton.addEventListener("click", () => {
