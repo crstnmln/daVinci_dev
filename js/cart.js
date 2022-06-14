@@ -32,9 +32,10 @@ if (updatedCart.length > 0) {
     payBtn.style.display = 'none';
     console.log("entro en false - el carrito esta vacio");
     boxCart.innerHTML += `
-        <section class = "boxItem" >
+        <section class = "boxItem" id = "empty">
             <h3>Carrito Vacio</h3>
         </section>`;
+        payBtn.style.display = 'none';
 };
 
  updatedCart.forEach((product) => {
@@ -66,7 +67,7 @@ if (updatedCart.length > 0) {
         if (updatedCart.length === 0 || !updatedCart || updatedCart == null) {
             console.log("entro en false - el carrito esta vacio");
             boxCart.innerHTML += `
-                <section class = "boxItem" >
+                <section class = "boxItem" id = "empty">
                     <h3>Carrito Vacio</h3>
                 </section>`;
             payBtn.style.display = 'none';
@@ -103,6 +104,7 @@ pay.addEventListener("click", () => {
     
     })
 
+
         swal({
             title: "Gracias por tu compra!",
             text: `el valor total apagar eso ${total}!`,
@@ -112,6 +114,21 @@ pay.addEventListener("click", () => {
           });
           total=0;
           mainCart = [];
+          updatedCart = [];
+          localStorage.setItem("cartOnBrowser", JSON.stringify(mainCart));
+
+          while (boxCart.firstChild) {
+              console.log('deberia borrar todo y actualizar en carrito vacio');
+                  boxCart.removeChild(boxCart.lastChild);
+          }
+           if (updatedCart.length === 0 || !updatedCart || updatedCart == null) {
+            console.log("se vacio el carrito despues de pagar ");
+             boxCart.innerHTML += `
+                <section class = "boxItem" id = "empty" >
+                    <h3>Carrito Vacio</h3>
+                </section>`;
+            payBtn.style.display = 'none'; 
+        } 
     });
 
 
